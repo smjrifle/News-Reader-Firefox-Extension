@@ -31,5 +31,5 @@ img[src*='ad_'],
 *[id*='-bigyapan'],
 *[class*='-bigyapan'],
 *[class*='advertisement'] {
-	display: none !important;
+    /* display: none !important; */
 }

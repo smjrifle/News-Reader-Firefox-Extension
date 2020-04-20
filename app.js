@@ -10,6 +10,17 @@ const newsReader = {
 
         for (var j = 0; j < this.ads.length; j++) {
             var ad = this.ads[j];
+            if (ad.querySelector('header') != null) {
+                console.log(ad.parentNode);
+                ad.parentNode.prepend(ad.querySelector('header'));
+                console.log(ad.querySelector('header'));
+            }
+            if (ad.querySelector('footer') != null) {
+                ad.parentNode.appendChild(ad.querySelector('footer'));
+            }
+            if (ad.querySelector('.content') != null) {
+                ad.parentNode.prepend(ad.querySelector('.content'));
+            }
             ad.remove();
             // if(ad.parentNode != null)  ad.parentNode.removeChild(ad); else  ad.remove();
         }
