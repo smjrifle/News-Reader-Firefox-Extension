@@ -1,5 +1,5 @@
 {
-    "name": "News Reader",
+    "name": "News Cleaner",
     "version": "1.0",
     "description": "Remove flashy panic inducing gifs esp from Nepali News sites",
     "background": {
@@ -18,41 +18,39 @@
         },
         "default_popup": "popup.html"
     },
-    "content_scripts": [
-        {
-            "matches": [
-                "*://*.onlinekhabar.com/*",
-                "*://*.annapurnapost.com/*",
-                "*://*.arthasarokar.com/*",
-                "*://*.ekantipur.com/*",
-                "*://*.ratopati.com/*",
-                "*://*.news24nepal.tv/*",
-                "*://*.baahrakhari.com/*",
-                "*://*.medianp.com/*",
-                "*://*.purbelinews.com/*",
-                "*://*.nepalipatra.com/*",
-                "*://*.nepalitimes.com/*",
-                "*://*.setopati.com/*",
-                "*://*.ujyaaloonline.com/*",
-                "*://*.weeklynepal.com/*",
-                "*://*.khabarhub.com/*",
-                "*://*.thahakhabar.com/*",
-                "*://*.lokpath.com/*",
-                "*://*.sutranews.com/*",
-                "*://*.dcnepal.com/*",
-                "*://*.nepaljapan.com/*",
-                "*://*.onlinepana.com/*",
-                "*://*.nayapage.com/*",
-                "*://*.lokaantar.com/*",
-                "*://*.nepallive.com/*",
-                "*://*.janaboli.com/*",
-                "*://*.reportersnepal.com/*",
-                "*://*.sancharkendra.com/*",
-                "*://*.dainikonline.com/*"
-            ],
-            "css": ["newscleaner.css"],
-            "js": ["app.js"]
-        }
-    ],
+    "content_scripts": [{
+        "matches": [
+            "*://*.onlinekhabar.com/*",
+            "*://*.annapurnapost.com/*",
+            "*://*.arthasarokar.com/*",
+            "*://*.ekantipur.com/*",
+            "*://*.ratopati.com/*",
+            "*://*.news24nepal.tv/*",
+            "*://*.baahrakhari.com/*",
+            "*://*.medianp.com/*",
+            "*://*.purbelinews.com/*",
+            "*://*.nepalipatra.com/*",
+            "*://*.nepalitimes.com/*",
+            "*://*.setopati.com/*",
+            "*://*.ujyaaloonline.com/*",
+            "*://*.weeklynepal.com/*",
+            "*://*.khabarhub.com/*",
+            "*://*.thahakhabar.com/*",
+            "*://*.lokpath.com/*",
+            "*://*.sutranews.com/*",
+            "*://*.dcnepal.com/*",
+            "*://*.nepaljapan.com/*",
+            "*://*.onlinepana.com/*",
+            "*://*.nayapage.com/*",
+            "*://*.lokaantar.com/*",
+            "*://*.nepallive.com/*",
+            "*://*.janaboli.com/*",
+            "*://*.reportersnepal.com/*",
+            "*://*.sancharkendra.com/*",
+            "*://*.dainikonline.com/*"
+        ],
+        "css": ["newscleaner.css"],
+        "js": ["app.js"]
+    }],
     "manifest_version": 2
 }
