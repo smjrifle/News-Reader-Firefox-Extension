@@ -34,8 +34,23 @@ const newsReader = {
         console.log('Newsreader init');
     },
 };
-// setInterval(function() {
+//Allow First Run
 newsReader.log();
 newsReader.appendAdPanel();
 newsReader.init();
-// }, 3000);
+
+//Run after two seconds to remove any post load scripts
+setTimeout(function() {
+    newsReader.log();
+    newsReader.appendAdPanel();
+    newsReader.init();
+    clearInterval(interval);
+}, 2000);
+
+//create 30 seconds interval to hide regenerated ads
+var interval = setInterval(function() {
+    newsReader.log();
+    newsReader.appendAdPanel();
+    newsReader.init();
+    clearInterval(interval);
+}, 30000);
