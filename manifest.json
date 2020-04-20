@@ -1,0 +1,24 @@
+{
+    "name": "News Reader",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "icons": {
+        "48": "images/icon_48.png"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "browser_action": {
+        "default_title": "",
+        "default_icon": "images/icon_48.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["app.js"]
+    }],
+    "manifest_version": 2
+}
