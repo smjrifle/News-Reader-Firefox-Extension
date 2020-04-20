@@ -1,4 +1,4 @@
-img[src$='.gif'],
+img[src*='.gif'],
 a.static-sponsor,
 a[href*='ncell'],
 a[href*='esewa'],
@@ -31,5 +31,5 @@ img[src*='ad_'],
 *[id*='-bigyapan'],
 *[class*='-bigyapan'],
 *[class*='advertisement'] {
-    /* display: none !important; */
+    display: none !important;
 }
