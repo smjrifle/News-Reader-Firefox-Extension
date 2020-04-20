@@ -15,7 +15,7 @@
         "default_popup": "popup.html"
     },
     "content_scripts": [{
-        "matches": ["*://*.onlinekhabar.com/*", "*://*.annapurnapost.com/*", "*://*.arthasarokar.com/*", "*://*.ekantipur.com/*", "*://*.ratopati.com/*", "*://*.news24nepal.tv/*", "*://*.baahrakhari.com/*", "*://*.medianp.com/*", "*://*.purbelinews.com/*", "*://*.nepalipatra.com/*", "*://*.nepalitimes.com/*", "*://*.setopati.com/*", "*://*.ujyaaloonline.com/*", "*://*.nepalitimes.com/*"],
+        "matches": ["*://*.onlinekhabar.com/*", "*://*.annapurnapost.com/*", "*://*.arthasarokar.com/*", "*://*.ekantipur.com/*", "*://*.ratopati.com/*", "*://*.news24nepal.tv/*", "*://*.baahrakhari.com/*", "*://*.medianp.com/*", "*://*.purbelinews.com/*", "*://*.nepalipatra.com/*", "*://*.nepalitimes.com/*", "*://*.setopati.com/*", "*://*.ujyaaloonline.com/*", "*://*.weeklynepal.com/*"],
         "js": ["app.js"]
     }],
     "manifest_version": 2
