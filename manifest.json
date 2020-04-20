@@ -1,24 +1,22 @@
 {
-	"name": "News Reader",
-	"version": "1.0",
-	"description": "Remove flashy panic inducing gifs esp from Nepali News sites",
-	"background": {
-		"scripts": ["background.js"]
-	},
-	"icons": {
-		"48": "images/icon_48.png"
-	},
-	"permissions": ["activeTab"],
-	"browser_action": {
-		"default_title": "News Reader",
-		"default_icon": "images/icon_48.png",
-		"default_popup": "popup.html"
-	},
-	"content_scripts": [
-		{
-			"matches": ["*://*/*"],
-			"js": ["app.js"]
-		}
-	],
-	"manifest_version": 2
+    "name": "News Reader",
+    "version": "1.0",
+    "description": "Remove flashy panic inducing gifs esp from Nepali News sites",
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "icons": {
+        "48": "images/icon_48.png"
+    },
+    "permissions": ["activeTab"],
+    "browser_action": {
+        "default_title": "News Reader",
+        "default_icon": "images/icon_48.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["*://*.onlinekhabar.com/*", "*://*.annapurnapost.com/*", "*://*.arthasarokar.com/*", "*://*.ekantipur.com/*", "*://*.ratopati.com/*", "*://*.news24nepal.tv/*", "*://*.baahrakhari.com/*", "*://*.medianp.com/*", "*://*.purbelinews.com/*", "*://*.nepalipatra.com/*", "*://*.nepalitimes.com/*", "*://*.setopati.com/*", "*://*.ujyaaloonline.com/*", "*://*.weeklynepal.com/*", "*://*.khabarhub.com/*", "*://*.thahakhabar.com/*", "*://*.lokpath.com/*", "*://*.sutranews.com/*", "*://*.dcnepal.com/*", "*://*.nepaljapan.com/*", "*://*.onlinepana.com/*", "*://*.nayapage.com/*", "*://*.lokaantar.com/*", "*://*.nepallive.com/*", "*://*.janaboli.com/*", "*://*.reportersnepal.com/*", "*://*.sancharkendra.com/*", "*://*.dainikonline.com/*"],
+        "js": ["app.js"]
+    }],
+    "manifest_version": 2
 }
