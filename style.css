@@ -1,17 +1,15 @@
 .newsreader-sidebar-panel {
-    background-color: bisque;
-    height: 100vh;
-    width: 360px;
-    position: fixed;
-    right: 0;
-    top: 0;
+	height: 100vh;
+	width: 360px;
+	position: fixed;
+	right: 0;
+	top: 0;
 }
 
 .adpanel {
-    background: black;
-    padding: 2rem;
+	padding: 2rem;
 }
 
 .hidden {
-    display: none;
+	display: none;
 }
