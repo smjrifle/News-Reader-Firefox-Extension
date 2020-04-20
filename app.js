@@ -52,5 +52,4 @@ var interval = setInterval(function() {
     newsReader.log();
     newsReader.appendAdPanel();
     newsReader.init();
-    clearInterval(interval);
 }, 30000);
