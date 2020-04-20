@@ -34,8 +34,8 @@ const newsReader = {
         console.log('Newsreader init');
     },
 };
-setInterval(function() {
-    newsReader.log();
-    newsReader.appendAdPanel();
-    newsReader.init();
-}, 3000);
+// setInterval(function() {
+newsReader.log();
+newsReader.appendAdPanel();
+newsReader.init();
+// }, 3000);
